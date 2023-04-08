@@ -51,7 +51,6 @@ def get_fallback_alt_url(url: str) -> str:
 
 async def get_alt_url(url: str) -> str:
     """find alternative url from different sources with fallbacks"""
-    return get_fallback_alt_url(url)
     alt_url = await get_url_from_farside(url)
     return alt_url or get_fallback_alt_url(url)
 
