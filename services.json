@@ -1,0 +1,14 @@
+[
+    {
+        "domain": "youtube.com",
+        "fallback": "piped.video"
+    },
+    {
+        "domain": "twitter.com",
+        "fallback": "nitter.net"
+    },
+    {
+        "domain": "youtu.be",
+        "fallback": "piped.video"
+    }
+]

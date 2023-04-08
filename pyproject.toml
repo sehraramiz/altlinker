@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "altlinker"
+version = "0.0.1"
+description = ""
+authors = ["Admin <sehraramiz@disroot.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+starlette = "^0.26.1"
+httpx = "^0.23.3"
+uvicorn = "^0.21.1"
+pytelegrambotapi = "^4.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest="*"
+black="*"
+mypy="*"
+ruff="*"
+isort="*"
+
+[tool.black]
+line-length = 79
+
+[tool.mypy]
+strict = false
+warn_unused_ignores = false
+ignore_missing_imports = true
+plugins = ["pydantic.mypy"]
+
+[tool.ruff]
+select = [
+    "E",
+    "W",
+    "F",
+    # "I",  # isort
+    "C",
+    "B",
+]
+ignore = [
+    "E501",
+    "B008",
+]
+
+[tool.isort]
+profile = "black"
