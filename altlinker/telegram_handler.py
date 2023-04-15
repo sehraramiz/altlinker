@@ -1,3 +1,4 @@
+import asyncio
 import logging
 
 import telebot
@@ -40,3 +41,14 @@ async def msg_handler(message) -> None:
 async def update_data_handler(update_data: dict) -> None:
     update = telebot.types.Update.de_json(update_data)
     await bot.process_new_updates([update])
+
+
+async def start_polling() -> None:
+    logger.info("removing webhook")
+    await bot.remove_webhook()
+    logger.info("start polling for message updates...")
+    await bot.infinity_polling()
+
+
+if __name__ == "__main__":
+    asyncio.run(start_polling())

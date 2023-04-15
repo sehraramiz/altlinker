@@ -1,5 +1,8 @@
 import json
 import os
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 with open("services.json", "r") as f:
     services = json.load(f)
