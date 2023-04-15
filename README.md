@@ -7,6 +7,15 @@ This bot uses [Farside, a redirecting service for FOSS alternative frontends](ht
 Use [@AlteLinkerBot](https://t.me/AltLinkerBot) in groups to encourage the usage of these [privacy-friendly options](https://github.com/Lissy93/awesome-privacy#proxy-sites).
 
 
+### Install requirements
+
+```console
+$ python -m venv .venv
+$ source .venv/bin/activate
+$ pip install poetry
+$ poetry install
+```
+
 ### Instructions for setting up telegram bot
 
 #### with webhook
