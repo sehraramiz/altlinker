@@ -1,5 +1,5 @@
 webhook-set:
-	curl -F ${WEBHOOK_URL} "https://api.telegram.org/bot${BOT_TOKEN}/setWebhook"
+	curl -F "url=${WEBHOOK_URL}" "https://api.telegram.org/bot${BOT_TOKEN}/setWebhook"
 
 webhook-delete:
 	curl "https://api.telegram.org/bot${BOT_TOKEN}/deleteWebhook"
