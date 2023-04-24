@@ -13,7 +13,9 @@ logger = logging.getLogger(__name__)
 def get_urls_in_text(text: str, services: list[str]) -> set[str]:
     """find all urls that have alternative frontends in a message"""
     domains = "|".join(re.escape(domain) for domain in services)
-    regex = rf"https?://(?:www\.)?(?:{domains})[\w\-\./\?\#\%\&\=\+]+"
+    regex = (
+        rf"(?:(?:https?:)?//)?(?:www\.)?(?:{domains})[\w\-\./\?\#\%\&\=\+]+"
+    )
     return set(re.findall(regex, text))
 
 
