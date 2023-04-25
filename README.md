@@ -24,7 +24,7 @@ $ poetry install
 
 ```console
 $ export BOT_TOKEN=bot-token-rstuvwxyz
-$ export WEBHOOK_URL=https://yourdomain.com/telegram/hook export BOT_TOKEN=bot-token
+$ export WEBHOOK_URL=https://yourdomain.com/telegram/hook
 $ make webhook-set
 {"ok":true,"result":true,"description":"Webhook was set"}
 ```
