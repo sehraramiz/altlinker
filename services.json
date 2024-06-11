@@ -8,6 +8,10 @@
         "fallback": "nitter.net"
     },
     {
+        "domain": "x.com",
+        "fallback": "nitter.net"
+    },
+    {
         "domain": "youtu.be",
         "fallback": "piped.video"
     }
