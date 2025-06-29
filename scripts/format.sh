@@ -1,6 +1,6 @@
 #!/bin/sh -e
 set -x
 
-ruff altlinker --fix
-black altlinker
-isort altlinker
+${PYTHONPATH:-python} -m uv run ruff altlinker --fix
+${PYTHONPATH:-python} -m uv run black altlinker
+${PYTHONPATH:-python} -m uv run isort altlinker
