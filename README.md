@@ -9,11 +9,10 @@ Use [@AltLinkerBot](https://t.me/AltLinkerBot) in groups to encourage the usage 
 
 ### Install requirements
 
+Install uv at (https://docs.astral.sh/uv)
+
 ```console
-$ python -m venv .venv
-$ source .venv/bin/activate
-$ pip install poetry
-$ poetry install
+$ uv sync
 ```
 
 ### Instructions for setting up telegram bot
